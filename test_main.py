@@ -17,10 +17,26 @@ def test_predict_positive():
     assert response.status_code == 200
     assert json_data['label'] == 'POSITIVE'
 
-
+    
+def test_predict_positive_2(): 
+    response = client.post("/predict/", 
+                           json={"text": "I enjoy sport!"}) 
+    json_data = response.json() 
+    assert response.status_code == 200 
+    assert json_data['label'] == 'POSITIVE'
+    
+    
 def test_predict_negative():
     response = client.post("/predict/",
                            json={"text": "I hate machine learning!"})
+    json_data = response.json()
+    assert response.status_code == 200
+    assert json_data['label'] == 'NEGATIVE'
+    
+
+    def test_predict_negative_2():
+    response = client.post("/predict/",
+                           json={"text": "I don't like to drink milk!"})
     json_data = response.json()
     assert response.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
