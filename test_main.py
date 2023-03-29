@@ -34,7 +34,7 @@ def test_predict_negative():
     assert json_data['label'] == 'NEGATIVE'
     
 
-    def test_predict_negative_2():
+def test_predict_negative_2():
     response = client.post("/predict/",
                            json={"text": "I don't like to drink milk!"})
     json_data = response.json()
