@@ -8,8 +8,8 @@ from pydantic import BaseModel
 class Item(BaseModel):
     text: str
 
-        
-# Создается объект FastAPI и классификатор из библиотеки Hugging Face на основе 
+
+# Создается объект FastAPI и классификатор из библиотеки Hugging Face на основе
 # пайплайна с типом “sentiment-analysis”.
 app = FastAPI()
 classifier = pipeline("sentiment-analysis")
@@ -17,7 +17,7 @@ classifier = pipeline("sentiment-analysis")
 
 # Определим декоратор @app.get("/")
 @app.get("/")
-# Возвращает сообщение, которое мы хотим передать в формате 
+# Возвращает сообщение, которое мы хотим передать в формате
 # JSON {"message": "Hello World"}
 def root():
     return {"message": "Hello World"}
