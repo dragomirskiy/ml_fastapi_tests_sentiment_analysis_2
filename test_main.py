@@ -26,17 +26,17 @@ def test_predict_positive_2():
     assert json_data['label'] == 'POSITIVE'
 
 
-def test_predict_negative():
-    response = client.post("/predict/",
+def test_negative_sentiment_analysis_1():
+    response_post = client.post("/predict/",
                            json={"text": "I hate machine learning!"})
-    json_data = response.json()
-    assert response.status_code == 200
+    json_data =  response_post.json()
+    assert  response_post.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
 
 
-def test_predict_negative_2():
-    response = client.post("/predict/",
+def test_negative_sentiment_analysis_2():
+    response_post = client.post("/predict/",
                            json={"text": "I don't like to drink milk!"})
-    json_data = response.json()
-    assert response.status_code == 200
+    json_data = response_post.json()
+    assert response_post.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
