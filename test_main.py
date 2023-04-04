@@ -40,4 +40,3 @@ def test_negative_sentiment_analysis_2():
     json_data = response_post.json()
     assert response_post.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
-
