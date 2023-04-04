@@ -20,11 +20,11 @@ classifier = pipeline("sentiment-analysis")
 # Возвращает сообщение, которое мы хотим передать в формате
 # JSON {"message": "Hello World"}
 def root():
-"""Возвращает сообщение, которое мы хотим передать в формате JSON.
+    """Возвращает сообщение, которое мы хотим передать в формате JSON.
 
-Returns:
-    dict: сообщение, которое мы хотим передать в формате JSON {"message": "Hello World"}
-"""
+    Returns:
+        dict: сообщение, которое мы хотим передать в формате JSON {"message": "Hello World"}
+    """
     return {"message": "Hello World"}
 
 
