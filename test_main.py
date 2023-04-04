@@ -12,7 +12,7 @@ def test_read_main():
 
 def test_positive_sentiment_analysis_1():
     response_post = client.post("/predict/",
-                           json={"text": "I like machine learning!"})
+                                json={"text": "I like machine learning!"})
     json_data = response_post.json()
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
@@ -20,7 +20,7 @@ def test_positive_sentiment_analysis_1():
 
 def test_positive_sentiment_analysis_2():
     response_post = client.post("/predict/",
-                           json={"text": "I enjoy sport!"})
+                                json={"text": "I enjoy sport!"})
     json_data = response_post.json()
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
