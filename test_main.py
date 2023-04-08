@@ -1,8 +1,12 @@
+# Подключим TestClient — клиент для тестрования API из FastAPI.
 from fastapi.testclient import TestClient
+
+# Bмпортируем объект app класса FastAPI из файл main.py в текущем каталоге.
+# файле main.py содержится код приложения API для модели машинного обучения.
 from main import app
 
+# Создание клиента для тестирования, которому при создании передается объект API app
 client = TestClient(app)
-
 
 def test_read_main():
     response = client.get("/")
