@@ -9,6 +9,8 @@ from main import app
 client = TestClient(app)
 
 # Проверяет доступность приложения при обращении к корню сервера:
+
+
 def test_read_main():
     # Клиент запускает запрос HTTP GET к корню сервера (путь "/") и записывает результат в переменную response.
     response = client.get("/")
@@ -41,6 +43,7 @@ def test_positive_sentiment_analysis_2():
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
     
+    
 def test_positive_sentiment_analysis_3():
     response_post = client.post("/predict/",
                                 json={"text": "Spring is a wonderful and beautiful time of the year."})
@@ -48,7 +51,10 @@ def test_positive_sentiment_analysis_3():
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
 
+    
 # Проверяет тональность отрицательной фразы.
+
+
 def test_negative_sentiment_analysis_1():
     # Клиент передает запрос POST, путь на сервере "/predict/".
     # В теле сообщения в формате JSON передается сообщение для определения тональности.
