@@ -51,7 +51,7 @@ def test_positive_sentiment_analysis_3():
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
 
-    
+
 # Проверяет тональность отрицательной фразы.
 
 
@@ -76,6 +76,7 @@ def test_negative_sentiment_analysis_2():
     assert response_post.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
     
+
 def test_negative_sentiment_analysis_3():
     response_post = client.post("/predict/",
                                 json={"text": "Winter is a disgusting time of the year."})
