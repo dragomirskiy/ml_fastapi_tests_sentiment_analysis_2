@@ -42,8 +42,8 @@ def test_positive_sentiment_analysis_2():
     json_data = response_post.json()
     assert response_post.status_code == 200
     assert json_data['label'] == 'POSITIVE'
-    
-    
+
+
 def test_positive_sentiment_analysis_3():
     response_post = client.post("/predict/",
                                 json={"text": "Spring is a wonderful and beautiful time of the year."})
@@ -75,7 +75,7 @@ def test_negative_sentiment_analysis_2():
     json_data = response_post.json()
     assert response_post.status_code == 200
     assert json_data['label'] == 'NEGATIVE'
-    
+
 
 def test_negative_sentiment_analysis_3():
     response_post = client.post("/predict/",
