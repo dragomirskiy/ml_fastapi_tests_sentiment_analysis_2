@@ -20,7 +20,7 @@
 Сервер **Uvicorn** успешно запущен, указана ссылка, по которой он работает — *http://127.0.0.1:8000*
 
 # 3. Использование приложения.
-## 3.1. Вызов API с параметрами средствами `curl`.
+## 3.1. Инструменты для работы с API: 'curl'.
 Запрос с помощью curl:
 
 ```
@@ -41,7 +41,44 @@ curl -X 'POST' \
 
 Так выглядит результат выполнения команды `curl` в терминале:
 
-<a href="https://ibb.co/njmyjCf"><img src="https://i.ibb.co/hV9NVfH/curlterm.png" alt="curlterm" border="0"></a><br />
+<a href="https://ibb.co/Fnn15dL"><img src="https://i.ibb.co/TrrG4Nx/image.png" alt="image" border="0"></a>
+
+## 3.2. Инструменты для работы с API: 'Postman'
+### 3.2.1. Установка Postman.
+1. Чтобы установить Postman на свой компьютер, перейдите по [ссылке](https://www.postman.com/downloads/).
+2. Скачайте версию Postman для своей операционной системы.
+3. После скачивания запустите установочный файл и выполните установку.
+
+Также существует **веб-версия Postman**, которую можно использовать, не устанавливая на свой компьютер. Веб-версия доступна [здесь](https://identity.getpostman.com/login?continue=https%3A%2F%2Fweb.postman.co%2F).
+
+### 3.2.1. Работа с API Postman.
+При запуске Postman вы попадаете в свое рабочее пространство (**My Workspace**).
+<a href="https://ibb.co/G3kL0LH"><img src="https://i.ibb.co/M5p4s4B/1.png" alt="1" border="0"></a>
+
+Чтобы создать запрос к API, нужно нажать на кнопку + в верхней панели рабочего пространства. 
+<a href="https://ibb.co/ckH8QVR"><img src="https://i.ibb.co/q7fgpVh/2.png" alt="2" border="0"></a>
+
+Откроется окно для ввода запроса к API.<br>
+<a href="https://ibb.co/ZHgXRf5"><img src="https://i.ibb.co/k3DBVGj/3.png" alt="3" border="0"></a>
+
+Для запуска запроса нужно вставить ссылку в поле *«Enter request URL»* и нажать кнопку *«Send»*. 
+<a href="https://ibb.co/nRWn9Qm"><img src="https://i.ibb.co/g6nPNt9/4.png" alt="4" border="0"></a>
+
+Результат выполнения запроса будет показан в нижней части экрана окна Postman
+<a href="https://ibb.co/C9tb36Z"><img src="https://i.ibb.co/wQLSF7X/5.png" alt="5" border="0"></a>
+
+Параметры в Postman указываются в таблице под ссылкой для запроса. Вот пример указания параметра ***lang=ru***.  Сервер возвращает данные на русском языке.
+<a href="https://ibb.co/Mgb8gSy"><img src="https://i.ibb.co/K5YN5hc/6.png" alt="6" border="0"></a>
+
+Метод HTTP в Postman выбирается слева от URL. Список доступных методов достаточно большой, но, помимо **GET** и **POST**, другие методы почти не используются.
+<a href="https://ibb.co/HgcbqDt"><img src="https://i.ibb.co/h8G4VRB/7.png" alt="7" border="0"></a>
+
+Статус выполнения запроса HTTP показывается в правой верхней части окна результатов запроса. Если подвести мышь к статусу, то появится подсказка с описанием, что он означает.
+<a href="https://ibb.co/C22W3f6"><img src="https://i.ibb.co/GTTF4q9/8.png" alt="8" border="0"></a>
+
+Заголовки в Postman можно задать, если переключить таблицу под URL на вкладку Headers.
+<a href="https://ibb.co/4jXzxKr"><img src="https://i.ibb.co/CnYgFmG/9.png" alt="9" border="0"></a>
+
 
 # 4. Используемые библиотеки.
 Определение тональности текста осуществляется **ТОЛЬКО** на английском языке с помощью библиотеки Hugging Face.<br>
