@@ -35,7 +35,7 @@
 Сервер **Uvicorn** успешно запущен, указана ссылка, по которой он работает — *http://127.0.0.1:8000*<br>
 <a href="https://ibb.co/PNK41mb"><img src="https://i.ibb.co/MsrpP2j/11.png" alt="11" border="0"></a>
 
-## 2.3. Установка и запуск средствами Streamlit.
+## 2.3. Запуск средствами Streamlit.
 
 Установка Streamlit с помощью pip:<br>
 **`pip install streamlit`**<br>
