@@ -110,10 +110,14 @@ curl -X 'POST' \
 # 4. Используемые библиотеки.
 Определение тональности текста осуществляется **ТОЛЬКО** на английском языке с помощью библиотеки Hugging Face.<br>
 Для тестирования API используется инструмент TestClient из FastAPI.<br>
+Для создания WEB-приложения используется Streamlit.
 
 Перечень всех необходимых библиотек = requirements:
-- fastapi
-- uvicorn
-- transformers
-- torch
-- httpx
+fastapi
+uvicorn
+transformers
+torch
+httpx
+streamlit
+tensorflow
+tensorflow-cpu
