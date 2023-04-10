@@ -113,11 +113,11 @@ curl -X 'POST' \
 Для создания WEB-приложения используется Streamlit.
 
 Перечень всех необходимых библиотек = requirements:
-fastapi
-uvicorn
-transformers
-torch
-httpx
-streamlit
-tensorflow
-tensorflow-cpu
+- fastapi
+- uvicorn
+- transformers
+- torch
+- httpx
+- streamlit
+- tensorflow
+- tensorflow-cpu
