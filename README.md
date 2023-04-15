@@ -1,3 +1,29 @@
+# 0. Отчёт для защиты проекта.
+1. Стиль кода
+- форматтер: https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/tree/main/.github/workflows
+- lint8: https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/actions/runs/4700731023/jobs/8335800571
+
+2. Провинутый уровень командной разработки:
+- Драгомирский Радмил, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/4 
+- Агеев Николай https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/1
+- Игорь Пластов, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/2
+- Дмитрий Шалагин, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/3
+
+3. Качество кода:
+- Драгомирский Радмил, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/commit/d74a0cfdc771eb334fae6b6fc0df5b68d1d063b6
+- Агеев Николай https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/commit/2e41cd3cbf0aa127894349a13d6269bd77330028
+- Игорь Пластов, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/commit/912a46a1e766e3bdafc7af6972a6e8d399aef9e6
+- Дмитрий Шалагин, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/commit/8080b1b2d30c21347879f663abda82ee295a532e 
+
+4. Код ревью:
+- Драгомирский Радмил, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/9 
+- Агеев Николай https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/8
+- Игорь Пластов, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/11
+- Дмитрий Шалагин, https://github.com/dragomirskiy/ml_fastapi_tests_sentiment_analysis_2/pull/10
+
+5. Итоговый проект:
+- https://dragomirskiy-ml-fastapi-tests-sentime-main-for-streamlit-vosezt.streamlit.app/
+
 # 1. Приложение для определения тональности текста.
 
 ПРАКТИЧЕСКОЕ ЗАДАНИЕ<br>по дисциплине "Программная инженерия" магистратуры "Инженерия машинного обучения" (2 семестр)<br>Уральского Федерального Университета. Работу выполнили студенты 1-курса:
